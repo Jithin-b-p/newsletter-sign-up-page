@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+.newsletter-section {
+  background-color: hsl(var(--clr-neutral-100));
+  min-height: 100svh;
+  @include flex(column);
+}
+
+.newsletter-illustration {
+  width: 100%;
+  height: 55.5svh;
+  background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.newsletter-details {
+  padding: 2.3rem 1.5rem;
+  color: hsl(var(--clr-neutral-400));
+
+  &__heading,
+  &__description {
+    margin-block-end: 1.5rem;
+  }
+
+  &__features {
+    margin-block-end: 3.7rem;
+    @include flex(column);
+    gap: 0.625rem;
+
+    &--1,
+    &--2,
+    &--3 {
+      @include flex;
+      gap: 1rem;
+      &::before {
+        content: url(/assets/images/icon-list.svg);
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    @include flex(column, stretch);
+    gap: 1.5rem;
+    & span {
+      position: absolute;
+      font-size: 0.75rem;
+      font-weight: var(--fw-bold);
+      top: -1.3rem;
+    }
+
+    & label {
+      position: absolute;
+    }
+    & input {
+      padding: 1.2rem 1.5rem;
+      border: 1px solid hsl(var(--clr-neutral-300));
+      border-radius: 10px;
+    }
+  }
+}

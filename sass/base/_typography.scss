@@ -1,0 +1,10 @@
+.newsletter-details {
+  &__heading {
+    font-size: 2.5rem;
+  }
+
+  &__description,
+  &__features {
+    line-height: 1.5;
+  }
+}
