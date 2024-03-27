@@ -1,9 +1,15 @@
 @use "../abstracts" as *;
 
 .newsletter-section {
+  width: min(100%, 58rem);
   background-color: hsl(var(--clr-neutral-100));
   min-height: 100svh;
-  @include flex(column);
+
+  @media screen and (min-width: 48em) {
+    @include flex(row-reverse);
+    min-height: auto;
+    border-radius: 2.2rem;
+  }
 }
 
 .newsletter-illustration {
@@ -14,11 +20,26 @@
   background-size: cover;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  @media screen and (min-width: 48em) {
+    width: 50%;
+    height: 38rem;
+    margin: 1.5rem;
+    background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+  }
 }
 
 .newsletter-details {
-  padding: 2.3rem 1.5rem;
+  margin-inline: auto;
+  padding: var(--fluid-details-pb) var(--fluid-details-pi);
+  padding-inline-end: 2rem;
   color: hsl(var(--clr-neutral-400));
+
+  @media screen and (min-width: 48em) {
+    margin-block-start: 3rem;
+  }
 
   &__heading,
   &__description {
@@ -58,7 +79,7 @@
     & input {
       padding: 1.2rem 1.5rem;
       border: 1px solid hsl(var(--clr-neutral-300));
-      border-radius: 10px;
+      border-radius: 8px;
     }
   }
 }

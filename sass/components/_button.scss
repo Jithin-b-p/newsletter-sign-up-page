@@ -1,11 +1,12 @@
 .newsletter-details {
   &__form {
-  }
-  & button {
-    padding: 1rem 1.5rem;
-    font-weight: var(--fw-bold);
-    background-color: hsl(var(--clr-neutral-400));
-    color: hsl(var(--clr-neutral-100));
-    border-radius: 10px;
+    & button {
+      padding: 1.1rem 1.5rem;
+      font-weight: var(--fw-bold);
+      background-color: hsl(var(--clr-neutral-400));
+      color: hsl(var(--clr-neutral-100));
+      border: none;
+      border-radius: 8px;
+    }
   }
 }
