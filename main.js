@@ -1,11 +1,12 @@
 import "./sass/style.scss";
 
 const form = document.getElementById("newsletter-form");
+const signupSection = document.getElementById("signup-section");
 const emailInput = document.getElementById("newsletter-email");
+const emailLabel = document.getElementById("email-label");
+
 const successEmail = document.getElementById("success-email");
 const successSection = document.getElementById("success-section");
-const signupSection = document.getElementById("signup-section");
-
 const dismissBtn = document.getElementById("dismiss-btn");
 
 function isValidEmail(email) {
@@ -31,7 +32,17 @@ const handleDismissMessage = (event) => {
   signupSection.classList.toggle("hidden");
   successSection.classList.toggle("hidden");
   successSection.classList.toggle("flex-col");
+  emailLabel.classList.toggle("label-animation");
+};
+
+const handleLabelDisplay = (event) => {
+  if (event.target.value === "") {
+    emailLabel.classList.toggle("label-animation");
+  } else {
+    emailLabel.classList.toggle("label-animation");
+  }
 };
 
 form.addEventListener("submit", handleFormSubmit);
 dismissBtn.addEventListener("click", handleDismissMessage);
+emailInput.addEventListener("change", handleLabelDisplay);

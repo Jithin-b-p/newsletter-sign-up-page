@@ -46,3 +46,8 @@ main {
 .hidden {
   display: none !important;
 }
+
+.label-animation {
+  transform: translateY(-3rem);
+  opacity: 0 !important;
+}

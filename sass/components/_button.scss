@@ -3,10 +3,20 @@
     & button {
       padding: 1.1rem 1.5rem;
       font-weight: var(--fw-bold);
-      background-color: hsl(var(--clr-neutral-400));
+      background: hsl(var(--clr-neutral-400));
       color: hsl(var(--clr-neutral-100));
       border: none;
       border-radius: 8px;
+      transition: all 0.4s;
+    }
+
+    & button:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 84, 118, 1) 0%,
+        rgba(255, 103, 66, 1) 100%
+      );
+      box-shadow: 0px 1rem 1.5rem 3px hsl(var(--clr-primary) / 30%);
     }
   }
 }
@@ -19,5 +29,14 @@
     color: hsl(var(--clr-neutral-100));
     border: none;
     border-radius: 8px;
+  }
+
+  &__btn:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 84, 118, 1) 0%,
+      rgba(255, 103, 66, 1) 100%
+    );
+    box-shadow: 0px 1rem 1.5rem 3px hsl(var(--clr-primary) / 30%);
   }
 }

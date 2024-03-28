@@ -31,13 +31,15 @@
           </ul>
 
           <form id="newsletter-form" class="newsletter-details__form">
-            <span>Email address</span>
-            <label for="email">Email address</label>
+            <span id="emailaddress">Email address</span>
             <input
               id="newsletter-email"
               type="text"
-              placeholder="email@company.com"
+              aria-describedby="emailaddress"
             />
+            <label id="email-label" for="newsletter-email"
+              >email@company.com</label
+            >
             <button type="submit">Subscribe to monthly newsletter</button>
           </form>
         </div>
