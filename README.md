@@ -30,11 +30,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop-design.jpg)
+![](./design/lighthouse-result.png)
 
 ### Links
 
 - Solution URL: [click here](https://your-solution-url.com)
-- Live Site URL: [click here](https://your-live-site-url.com)
+- Live Site URL: [click here](https://jithin-b-p-newsletter-signup.netlify.app/)
 
 ## My process
 
@@ -54,19 +55,16 @@ Users should be able to:
 
 ## Acknowledgments
 
-Every npm packages used for this project is provided in the package.json
-(sass, prefixer and compress)
-
-- Install them:
+- Install dependencies:
 
 ```bash
 npm install
 ```
 
-- For compiling and testing run this command from the command line inside the root folder:
+- run in development mode:
 
 ```bash
-npm run watch:sass
+npm run dev
 ```
 
-Scripts are provided along with the package.json do checkout and custom your own.
+Open http://localhost:5173 to view it in your browser.
