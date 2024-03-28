@@ -25,7 +25,7 @@ body {
 main {
   min-height: inherit;
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 26.5625em) {
     @include flex(row, center, center);
   }
 }
@@ -50,4 +50,16 @@ main {
 .label-animation {
   transform: translateY(-3rem);
   opacity: 0 !important;
+}
+
+.email-input__error {
+  padding: 1.2rem 1.5rem;
+  color: hsl(var(--clr-primary));
+  background-color: hsl(var(--clr-primary) / 10%);
+  border: 1px solid hsl(var(--clr-primary));
+  border-radius: 8px;
+}
+
+.email-input__error:focus-visible {
+  outline: 2px solid hsl(var(--clr-primary));
 }

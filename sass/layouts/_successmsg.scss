@@ -5,11 +5,17 @@
 }
 
 .success-message {
-  max-width: min(100%, 30rem);
+  max-width: 30rem;
+  margin-inline: auto;
   padding: 2rem 3rem;
   background-color: hsl(var(--clr-neutral-100));
   border-radius: 2rem;
   gap: 1.5rem;
+
+  @media screen and (max-width: 26.5625em) {
+    border-radius: 0;
+    min-height: 100svh;
+  }
 
   &__heading {
     color: hsl(var(--clr-neutral-400));
