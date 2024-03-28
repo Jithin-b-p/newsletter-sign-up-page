@@ -36,12 +36,13 @@
               class="email-input"
               id="newsletter-email"
               type="text"
-              aria-describedby="emailaddress"
+              aria-describedby="emailaddress error-msg"
+              aria-required="true"
             />
             <label id="email-label" for="newsletter-email"
               >email@company.com</label
             >
-            <span id="error-msg" class="error-msg" aria-hidden="true" hidden
+            <span id="error-msg" class="error-msg" hidden
               >Valid email required</span
             >
             <button type="submit">Subscribe to monthly newsletter</button>

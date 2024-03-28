@@ -28,6 +28,7 @@ const handleFormSubmit = (event) => {
   } else {
     emailInput.classList.remove("email-input");
     emailInput.classList.add("email-input__error");
+    emailInput.setAttribute("aria-invalid", true);
     errorMsg.removeAttribute("hidden");
   }
 };
@@ -45,6 +46,7 @@ const handleInputChange = (event) => {
   } else {
     emailInput.classList.remove("email-input__error");
     emailInput.classList.add("email-input");
+    emailInput.removeAttribute("aria-invalid");
     emailLabel.classList.add("label-animation");
     errorMsg.setAttribute("hidden", "");
   }
