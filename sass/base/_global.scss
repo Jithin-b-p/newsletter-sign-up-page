@@ -19,13 +19,30 @@
 body {
   font-family: var(--ff-primary);
   min-height: 100svh;
-  background-color: hsl(var(--clr-neutral-400));
+  background-color: hsl(var(--clr-neutral-300));
 }
 
-#app {
-  min-height: 100svh;
+main {
+  min-height: inherit;
 
   @media screen and (min-width: 48em) {
     @include flex(row, center, center);
   }
+}
+
+// utility
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  aspect-ratio: 1;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none !important;
 }
