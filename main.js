@@ -41,7 +41,7 @@ const handleDismissMessage = (event) => {
 };
 
 const handleInputChange = (event) => {
-  if (event.target.value === "") {
+  if (emailInput.value === "") {
     emailLabel.classList.remove("label-animation");
   } else {
     emailInput.classList.remove("email-input__error");
@@ -52,6 +52,11 @@ const handleInputChange = (event) => {
   }
 };
 
+const handleEmailPasting = (event) => {
+  emailLabel.classList.add("label-animation");
+};
+
 form.addEventListener("submit", handleFormSubmit);
 dismissBtn.addEventListener("click", handleDismissMessage);
-emailInput.addEventListener("keydown", handleInputChange);
+emailInput.addEventListener("input", handleInputChange);
+emailInput.addEventListener("paste", handleEmailPasting);
