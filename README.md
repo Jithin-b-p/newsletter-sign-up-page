@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [click here](https://your-solution-url.com)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/responsivenewslettersignuppagesassbemvanilla-js-nlTxTSSI9m)
 - Live Site URL: [click here](https://jithin-b-p-newsletter-signup.netlify.app/)
 
 ## My process
